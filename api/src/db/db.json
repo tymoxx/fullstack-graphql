@@ -5,17 +5,17 @@
   },
   "pet": [
     {
-      "id": "AmVzekXoyo8xZvFS6-ZFg",
-      "createdAt": 1693939523820,
-      "name": "batman",
-      "type": "DOG",
-      "user": "jBWMVGjm50l6LGwepDoty"
-    },
-    {
       "id": "cVFovU-gs7ZthsQzVFNLz",
       "createdAt": 1693940558058,
       "name": "new",
       "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "aU1OtxLS2ekQopUpZ0l-G",
+      "createdAt": 1693944722101,
+      "name": "BB",
+      "type": "CAT",
       "user": "jBWMVGjm50l6LGwepDoty"
     }
   ]
