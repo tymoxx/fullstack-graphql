@@ -1,4 +1,8 @@
 .DS_Store
+remote-schema.graphql
+graphql.config.yml
+
+.idea
 
 # Logs
 logs

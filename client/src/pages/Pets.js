@@ -5,7 +5,6 @@ import PetsList from '../components/PetsList'
 import NewPetModal from '../components/NewPetModal'
 import Loader from '../components/Loader'
 
-
 export default function Pets () {
   const [modal, setModal] = useState(false)
 
@@ -13,7 +12,7 @@ export default function Pets () {
   const onSubmit = input => {
     setModal(false)
   }
-  
+
   if (modal) {
     return <NewPetModal onSubmit={onSubmit} onCancel={() => setModal(false)} />
   }
