@@ -5,28 +5,18 @@
   },
   "pet": [
     {
-      "id": "1",
+      "id": "AmVzekXoyo8xZvFS6-ZFg",
+      "createdAt": 1693939523820,
+      "name": "batman",
       "type": "DOG",
-      "name": "Barsik",
-      "owner": "User1",
-      "img": "String!",
-      "createdAt": "Int!"
+      "user": "jBWMVGjm50l6LGwepDoty"
     },
     {
-      "id": "2",
-      "type": "CAT",
-      "name": "Jack",
-      "owner": "User1",
-      "img": "String!",
-      "createdAt": "Int!"
-    },
-    {
-      "id": "3",
-      "type": "CAT",
-      "name": "Emma",
-      "owner": "User1",
-      "img": "String!",
-      "createdAt": "Int!"
+      "id": "cVFovU-gs7ZthsQzVFNLz",
+      "createdAt": 1693940558058,
+      "name": "new",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
     }
   ]
 }
