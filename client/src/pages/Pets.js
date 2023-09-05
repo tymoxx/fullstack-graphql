@@ -4,6 +4,7 @@ import {useQuery, useMutation} from '@apollo/react-hooks'
 import PetsList from '../components/PetsList'
 import NewPetModal from '../components/NewPetModal'
 import Loader from '../components/Loader'
+import {Mutation} from "../../../api/src/resolvers";
 
 const ALL_PETS = gql`
     query AllPets {
@@ -42,7 +43,7 @@ export default function Pets() {
     })
 
 
-  if (loading || newPet.loading) {
+  if (loading) {
     return <Loader/>
   }
 
@@ -54,12 +55,19 @@ export default function Pets() {
     const {name, type} = input;
 
     createPet({
-      variables: {
-        "newPet": {
-          "name": name,
-          "type": type
+      variables: {"newPet": input},
+      optimisticResponse: {
+        __typename: Mutation,
+        addPet: {
+          __typename: "Pet",
+          id: Math.floor(Math.random() * 10000) + '',
+          name,
+          type,
+          img: "https://via.placeholder.com/300"
+
         }
       }
+
     })
     setModal(false)
   }

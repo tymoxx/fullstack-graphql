@@ -5,6 +5,37 @@
   },
   "pet": [
     {
+      "id": "1",
+      "type": "DOG",
+      "name": "Barsik",
+      "owner": "User1",
+      "img": "String!",
+      "createdAt": "Int!"
+    },
+    {
+      "id": "2",
+      "type": "CAT",
+      "name": "Jack",
+      "owner": "User1",
+      "img": "String!",
+      "createdAt": "Int!"
+    },
+    {
+      "id": "3",
+      "type": "CAT",
+      "name": "Emma",
+      "owner": "User1",
+      "img": "String!",
+      "createdAt": "Int!"
+    },
+    {
+      "id": "AmVzekXoyo8xZvFS6-ZFg",
+      "createdAt": 1693939523820,
+      "name": "batman",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
       "id": "cVFovU-gs7ZthsQzVFNLz",
       "createdAt": 1693940558058,
       "name": "new",
@@ -16,6 +47,27 @@
       "createdAt": 1693944722101,
       "name": "BB",
       "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "_i10SmOb6fqne3DumWm08",
+      "createdAt": 1693946032449,
+      "name": "Another pet",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "KbmGRm3t1L7REC7Yfu1mY",
+      "createdAt": 1693947241932,
+      "name": "Carrol",
+      "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "0vP5Ctc5Kyeetphbb9UOq",
+      "createdAt": 1693947257915,
+      "name": "Another one",
+      "type": "DOG",
       "user": "jBWMVGjm50l6LGwepDoty"
     }
   ]
