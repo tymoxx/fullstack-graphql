@@ -6,27 +6,37 @@ import NewPetModal from '../components/NewPetModal'
 import Loader from '../components/Loader'
 import {Mutation} from "../../../api/src/resolvers";
 
+const PET_FIELDS = gql`
+    fragment PetFields on Pet {
+        id
+        name
+        type
+        img
+        vaccinated @client
+        owner {
+            id
+            age @client
+        }
+    }
+`;
+
 const ALL_PETS = gql`
     query AllPets {
         pets {
-            name
-            id
-            type
-            img
+            ...PetFields
         }
     }
-`
+    ${PET_FIELDS}
+`;
 
 const NEW_PET = gql`
     mutation CreateAPet($newPet: NewPetInput!) {
         addPet(input: $newPet) {
-            id
-            name
-            type
-            img
+            ...PetFields
         }
     }
-`
+    ${PET_FIELDS}
+`;
 
 export default function Pets() {
   const [modal, setModal] = useState(false)
@@ -64,13 +74,14 @@ export default function Pets() {
           name,
           type,
           img: "https://via.placeholder.com/300"
-
         }
       }
 
     })
     setModal(false)
   }
+
+  console.log(data)
 
   if (modal) {
     return <NewPetModal onSubmit={onSubmit} onCancel={() => setModal(false)}/>
